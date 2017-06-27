@@ -1,0 +1,28 @@
+languageCode: "en-us"
+title: "dependencies.io"
+baseURL: "https://dependencies.io/"
+theme: "dropseed"
+PygmentsCodeFences: true
+pygmentsstyle: friendly
+
+menu:
+  navbar:
+    - Name: "Pricing"
+      Identifier: "pricing"
+      URL: "/pricing/"
+      weight: -90
+    - Name: "Contact"
+      Identifier: "contact"
+      URL: "/contact/"
+      weight: -80
+    - Name: "Docs"
+      Identifier: "docs"
+      URL: "/docs/"
+      weight: -0
+
+params:
+  navbar_classes: "navbar-light"
+  navbar_brand_text: "dependencies.io"
+  navbar_logo: "dependencies-io-logo_shaded_60px.png"
+  footer_logo: "dependencies-io-logo_light_150p.png"
+  app_login_url: "https://app.dependencies.io/"

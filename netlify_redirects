@@ -1,0 +1,2 @@
+http://docs.dependencies.io/*    /docs/:splat    200
+https://docs.dependencies.io/*    /docs/:splat    200

@@ -1,0 +1,111 @@
+.btn-lg {
+    text-transform: uppercase;
+    font-size: .9rem;
+    letter-spacing: 1px;
+}
+
+.navbar {
+    border-bottom: 1px solid #ccc;
+
+    .navbar-brand {
+        line-height: 25px;
+        font-family: 'Fira Mono', monospace;
+
+        img {
+            margin-top: 0;
+            margin-right: -2px;
+        }
+    }
+}
+
+.coming-soon {
+    .logo {
+        max-height: 300px;
+        margin: 50px 0;
+    }
+}
+
+.supporting-logos {
+    border-top: 1px solid #d3d3d3;
+    border-bottom: 1px solid #d3d3d3;
+    background: #F9F9FB;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+
+    a {
+        margin: 0 1rem;
+        &:hover {
+            img { opacity: 1; }
+        }
+    }
+    img {
+        max-height: 40px;
+        margin-bottom: 1rem;
+        opacity: .9;
+    }
+}
+
+.features {
+    background-color: hsla(199, 77%, 99%, 1);
+
+    h5 {
+        font-family: $font-family-sans-serif;
+        font-weight: 400;
+    }
+    p {
+        font-size: .8rem;
+    }
+    .fa {
+        float: left;
+        height: 100%;
+        font-size: 1.5rem;
+        margin-left: -2.5rem;
+        margin-right: .5rem;
+        color: $blue-light;
+    }
+    .col-sm-4 {
+        padding-right: 3rem;
+    }
+}
+
+.footer-container {
+    background: linear-gradient($blue-darker, lighten($blue-darker, 3%));
+    box-shadow: inset 0 10px 10px -5px darken($blue-darker, 10%);
+    .list-heading {
+        color: lighten($blue-dark, 15%);
+    }
+
+    .logo {
+        opacity: 1;
+        max-height: 30px;
+    }
+}
+
+.docs-sidebar {
+    margin-top: 5rem;
+}
+.docs-content {
+    margin-top: 3rem;
+
+    p {
+        max-width: 700px;  // reading length
+    }
+
+    h1, h2, h3 {
+        margin-bottom: 1rem;
+    }
+    h2 {
+        margin-top: 3rem;
+    }
+    h3 {
+        margin-top: 2rem;
+    }
+    h4, h5, h6 {
+        margin-top: 1.5rem;
+    }
+}
+
+.docs-content-footer {
+    color: $gray-light;
+    font-size: .8rem;
+}

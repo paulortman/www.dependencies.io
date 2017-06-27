@@ -1,0 +1,49 @@
+// Bootstrap overrides
+//
+// Copy variables from `_variables.scss` to this file to override default values
+// without modifying source files.
+// Bootstrap overrides
+//
+// Copy variables from `_variables.scss` to this file to override default values
+// without modifying source files.
+
+$brand-primary:             #00ACF1;
+
+$blue-light: #00ACF1;
+$blue-dark: #004168;
+$blue-darker: #06202C;
+
+// required by dropseed theme
+$brand-primary-lighter: $blue-light;
+
+$link-color: $blue-light;
+$text-color: $blue-dark;
+
+$font-family-sans-serif: "Open Sans", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+$font-family-monospace: "Fira Mono",  Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+$headings-font-family: $font-family-monospace;
+
+$enable-rounded: true;
+$enable-flex: true;
+$enable-gradients: true;
+$enable-shadows: true;
+$enable-transitions: true;
+
+$font-size-base: .875rem;
+
+$border-radius:          .15rem;
+$border-radius-lg:       .2rem;
+$border-radius-sm:       .1rem;
+
+$navbar-border-radius: 0;
+$alert-border-radius: 0;
+
+$font-weight-normal: 400;
+$font-weight-bold: 600;
+$headings-font-weight:   300;
+
+// $navbar-inverse-color:                 $purple-lighter;
+$navbar-inverse-hover-color:           white;
+$navbar-inverse-active-color:          white;
+
+// $code-color: $purple-bright;

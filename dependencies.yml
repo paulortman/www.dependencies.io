@@ -1,0 +1,6 @@
+collectors:
+- type: git-repo
+  path: repo_dependencies.yml
+  actors:
+  - type: repo-issue
+    versions: "Y.Y"

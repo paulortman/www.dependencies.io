@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>{{ block "title" . }}{{ .Site.Title }}{{ end }}</title>
+        {{ partial "head.html" . }}
+    </head>
+    <body class="kind-{{ .Kind | default "unknown" }} section-{{ .Section | default "unknown" }} type-{{ .Type | default "unknown" }}">
+        {{ partial "body_top.html" . }}
+
+        {{ block "body_content" . }}
+
+            {{ block "header_container" . }}
+            <div class="header-container">
+                <nav class="navbar navbar-toggleable-md {{ .Site.Params.navbar_classes | default "navbar-inverse bg-primary" }}">
+                    <div class="container">
+
+                        {{ partial "navbar_content.html" . }}
+
+                    </div><!-- container -->
+                </nav>
+            </div>
+            {{ end }}
+
+            <div class="content-container">
+            {{ block "content" . }}
+                {{ .Content }}
+            {{ end }}
+            </div>
+
+            {{ block "footer_container" . }}
+            <div class="footer-container">
+                <div class="container">
+
+                    {{ partial "footer_content.html" . }}
+
+                    <div class="text-center">
+                        <img src="/img/{{ index .Site.Data.img.hash .Site.Params.footer_logo }}" alt="{{ .Site.Title }} logo" class="logo">
+                        <p class="copyright">
+                            <small>&copy; {{ now.Year }} Dropseed, LLC. All rights reserved.</small>
+                            <br>
+                            <small><small>GitHub&reg; and the Octocat&reg; logo are registered trademarks of GitHub, Inc., used with permission. Dropseed and {{ .Site.Title }} are not affiliated with GitHub.</small></small>
+                            <br>
+                            <small>Deployed with <a href="https://www.netlify.com/">Netlify</a></small>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            {{ end }}
+
+            {{ partial "footer_scripts.html" . }}
+
+        {{ end }}
+
+    </body>
+</html>

@@ -1,0 +1,84 @@
+{{ define "content" }}
+
+<div class="section text-center coming-soon">
+    <h1>Now in Early Access</h1>
+    <a class="typeform-share btn btn-lg btn-primary mt-2 mb-2" href="https://dropseed.typeform.com/to/ZuMVnV" data-mode="1" target="_blank">Request early access</a>
+    <br>
+    <img src="/img/{{ index .Site.Data.img.hash "dependencies-io-logo_shaded_500px.png" }}" alt="{{ .Site.Title }} logo" class="logo">
+</div>
+
+<div class="section supporting-logos">
+    <div class="container text-center">
+        <a href="/docs/"><img src="/img/{{ index .Site.Data.img.hash "supporting/python.png" }}" alt="python"></a>
+        <a href="/docs/"><img src="/img/{{ index .Site.Data.img.hash "supporting/npm.svg" }}" alt="npm"></a>
+        <a href="/docs/"><img src="/img/{{ index .Site.Data.img.hash "supporting/ruby.svg" }}" alt="ruby"></a>
+        <a href="/docs/"><img src="/img/{{ index .Site.Data.img.hash "supporting/github.png" }}" alt="github"></a>
+        <a href="/docs/"><img src="/img/{{ index .Site.Data.img.hash "supporting/golang.png" }}" alt="golang"></a>
+        <a href="/docs/"><img src="/img/{{ index .Site.Data.img.hash "supporting/gitlab.svg" }}" alt="gitlab"></a>
+        <a href="/docs/"><img src="/img/{{ index .Site.Data.img.hash "supporting/javascript.png" }}" alt="javascript"></a>
+        <a href="/docs/"><img src="/img/{{ index .Site.Data.img.hash "supporting/docker.png" }}" alt="docker"></a>
+        <a href="/docs/"><img src="/img/{{ index .Site.Data.img.hash "supporting/php.svg" }}" alt="php"></a>
+        <a href="/docs/"><img src="/img/{{ index .Site.Data.img.hash "supporting/git.png" }}" alt="git"></a>
+    </div>
+</div>
+
+<div class="section features">
+    <div class="container">
+        <div class="text-center mb-5">
+            <h2>The dependencies platform</h2>
+            <h3 class="text-muted">Built for developers, by developers.</h3>
+        </div>
+
+        <div class="row pt-3">
+            <div class="col-sm-4 mb-4">
+                <span class="fa fa-fw fa-code"></span>
+                <h5>Any language, any framework</h5>
+                <p>Our Docker-based platform can support anything that you do,
+                using the same tools that you use.</p>
+            </div>
+            <div class="col-sm-4 mb-4">
+                <span class="fa fa-fw fa-github"></span>
+                <h5>Built on open-source</h5>
+                <p>We open source every <a href="{{ relref . "docs/collectors/index.md" }}">collector</a>
+                and <a href="{{ relref . "docs/actors/index.md" }}">actor</a>.
+                You can understand how they work, improve them, or build your own.</p>
+            </div>
+            <div class="col-sm-4 mb-4">
+                <span class="fa fa-fw fa-search"></span>
+                <h5>Version content discovery</h5>
+                <p>We go the extra mile to track down as much information as we can
+                    about each release. Changelogs, blog posts, you name it.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-4 mb-4">
+                <span class="fa fa-fw fa-cubes"></span>
+                <h5>Docker containers</h5>
+                <p>By leveraging containers we've designed a plug-and-play
+                    system that uses native tools for
+                    managing and updating dependencies.</p>
+            </div>
+            <div class="col-sm-4 mb-4">
+                <span class="fa fa-fw fa-terminal"></span>
+                <h5>A platform for developers</h5>
+                <p>Everybody works a little differently. If you've got a custom
+                    setup, just build the <a href="{{ relref . "docs/collectors/index.md" }}">collector</a>
+                    or <a href="{{ relref . "docs/actors/index.md" }}">actor</a> and let us do the rest.</p>
+            </div>
+            <div class="col-sm-4 mb-4">
+                <span class="fa fa-fw fa-hand-pointer-o"></span>
+                <h5>One unified system</h5>
+                <p>Regardless of where a dependency comes from, in the
+                end you just want to know when new versions are available.
+                You should only need one tool for that.</p>
+            </div>
+        </div>
+
+        <div class="text-center mb-5 mt-4">
+            <a class="typeform-share btn btn-lg btn-primary" href="https://dropseed.typeform.com/to/ZuMVnV" data-mode="1" target="_blank">Request early access</a>
+            <script>(function(){var qs,js,q,s,d=document,gi=d.getElementById,ce=d.createElement,gt=d.getElementsByTagName,id='typef_orm_share',b='https://s3-eu-west-1.amazonaws.com/share.typeform.com/';if(!gi.call(d,id)){js=ce.call(d,'script');js.id=id;js.src=b+'share.js';q=gt.call(d,'script')[0];q.parentNode.insertBefore(js,q)}id=id+'_';if(!gi.call(d,id)){qs=ce.call(d,'link');qs.rel='stylesheet';qs.id=id;qs.href=b+'share-button.css';s=gt.call(d,'head')[0];s.appendChild(qs,s)}})()</script>
+        </div>
+    </div>
+</div>
+
+{{ end }}
