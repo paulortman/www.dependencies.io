@@ -7,13 +7,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/dropseedlabs/dependencies-public.git"
+    "url": "git+https://github.com/dependencies-io/www.dependencies.io.git"
   },
   "license": "GPL-3.0",
   "bugs": {
-    "url": "https://github.com/dropseedlabs/dependencies-public/issues"
+    "url": "https://github.com/dependencies-io/www.dependencies.io/issues"
   },
-  "homepage": "https://github.com/dropseedlabs/dependencies-public#readme",
+  "homepage": "https://github.com/dependencies-io/www.dependencies.io#readme",
   "devDependencies": {
     "concurrently": "^3.4.0",
     "del": "^2.2.2",
