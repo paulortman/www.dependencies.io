@@ -12,6 +12,13 @@ designed to be flexible with your workflow, and can do anything from send your
 team a Slack message, to create a GitHub pull request with the update already
 made.
 
+All it requires is a single `dependencies.yml` file at the root of your repo,
+which points us to the various dependency files in your project. Depending on
+the type of dependencies in each file, we'll run a [collector]({{< relref
+"docs/collectors/index.md" >}}) to find out what you have installed and which
+versions are available, then any [actors]({{< relref
+"docs/actors/index.md" >}}) to deliver those updates to you.
+
 ## How is this different from other services?
 
 As you'd expect, there are a handful of other services and tools out there that
