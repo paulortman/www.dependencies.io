@@ -17,18 +17,21 @@ collectors:
 - type: python-pip  # name of an official collector
   path: requirements.txt  # which file the collector should read
   actors:
-  - type: python-pip-github-pr  # name of an official actor
-    packages: ".*"  # regular expression for filtering dependencies by name
-    versions: Y.Y.Y  # versions that this actor should act on
+  - type: python-pip  # name of an official actor
+    dependencies: ".*"  # regular expression for filtering dependencies by name
+    versions: "L.Y.Y"  # versions that this actor should act on
     settings:  # settings for this specific actor
       pr_labels:
       - dependencies
 
-- type: node-yarn
-  path: react/package.json
+- type: js-npm
+  path: app  # the js-npm collector is given directories (which could have package.json, yarn.lock, etc.)
   actors:
-  - type: github-issue
-    packages: "react-.*"
-    versions: Y.N.N
+  - type: js-npm
+    dependencies: "react-.*"
+    versions: "L.Y.Y"
+  - type: repo-issue
+    dependencies: "react-.*"
+    versions: "Y.0.0"
 
 ```

@@ -24,4 +24,4 @@ By leveraging [docker containers](https://www.docker.com/what-container), we set
 could work with anything that you do. You shouldn't have to use multiple
 services to automate your dependency management.
 
-(docker whale with pypi, npm stuff around it with arrows pointing in)
+![Docker]({{< hash_img "docs/docker.png" >}})
