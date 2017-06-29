@@ -7,11 +7,12 @@ repos = (
     ('collector', 'python-pip'),
     ('collector', 'js-npm'),
     ('collector', 'git-repo'),
-    ('collector', 'php-wordpress'),
+    ('collector', 'php-composer'),
     ('actor', 'python-pip'),
     ('actor', 'js-npm'),
     ('actor', 'repo-issue'),
     ('actor', 'find-replace'),
+    ('actor', 'php-composer'),
 )
 
 

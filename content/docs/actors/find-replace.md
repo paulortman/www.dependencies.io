@@ -1,5 +1,5 @@
 ---
-date: 2017-06-16T14:50:23.362599
+date: 2017-06-29T15:47:28.434841
 draft: false
 title: "Actor: find-replace"
 ---
@@ -34,10 +34,20 @@ collectors:
       paths:  # files to do the replacement in (otherwise will use the file the dependency was collected from)
       - README.md
       # pattern that sed will find/replace
-      # can use `name`, `version`, `source`, and `path` of the dependency
+      # can use `name`, `version`, `version_clean`, `source`, and `path` of the dependency
       # defaults to {version} to only replace based on the version numbers
-      pattern: '{name}: {version}'
+      patterns:
+      - '{name}: {version}'
 ```
+
+#### Pattern args
+
+- `name` - `dependency.name` name of the dependency
+- `version` - version string
+- `version_clean` - `version` with leading "v" or "=" removed
+- `source` - `dependency.source` (ex. "npm", "pypi", "git", etc.)
+- `path` - `dependency.path` path that the collector gave for where this is installed at (ex. `app/package.json`)
+
 
 ### Works well with
 

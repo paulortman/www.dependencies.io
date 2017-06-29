@@ -1,5 +1,5 @@
 ---
-date: 2017-06-16T14:50:23.362599
+date: 2017-06-29T15:47:28.434841
 draft: false
 title: "Collector: git-repo"
 ---
@@ -22,8 +22,7 @@ that you are using currently.
 
 ```yaml
 repos:
-- name: minikube  # a display friendly name
-  url: https://github.com/kubernetes/minikube.git
+- url: https://github.com/kubernetes/minikube.git
   installed: v0.19.0
 ```
 

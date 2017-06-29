@@ -16,7 +16,7 @@ the exact same tools that you would use when working with your dependencies.
 - [python-pip](python-pip)
 - [js-npm](js-npm)
 - [git-repo](git-repo)
-- [php-wordpress](php-wordpress)
+- [php-composer](php-composer)
 
 ## dependencies.yml
 

@@ -18,15 +18,17 @@ you might want to have a pull request created for you.
 
 - [python-pip](python-pip)
 - [js-npm](js-npm)
+- [php-composer](php-composer)
 
 ## dependencies.yml
 
-Only two fields are required for each actor: `type`, `versions`
+Only one field is required for each actor: `type`
 
 ```yaml
 - type: python-pip  # one of the official actors
 
   # filter the versions that this actor will act on (i.e. only minor and patches, etc.)
+  # (matches all by default, including pre-releases)
   versions: "L.Y.Y"
 
   # a regex for filtering based on dependency name (matches all by default)
