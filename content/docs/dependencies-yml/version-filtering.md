@@ -29,7 +29,7 @@ wildcard range will match. This makes it impossible to get all minor updates
 _without_ also getting their patches. Our `Y` (yes) syntax defaults to `0` for
 everything after it. So to get minor updates without also getting patches, just
 use `L.Y.0`. Combine that with OR and you can now get notified about new minor updates to your
-version, as well as patches to the minor version you are using: `L.Y.0 || L.L.Y`
+version, as well as patches to _your_ minor version: `L.Y.0 || L.L.Y`
 
 ## Syntax overview
 
@@ -42,6 +42,12 @@ you quickly filter down to updates to your installed version.
 
 Anything in this "slot" (major/minor/patch/prerelease) will match. Slots after it
 default to `0`.
+
+##### Regular expressions
+
+Not everything follows semantic versioning. If that's the case, you can still
+filter the versions that you want by using regular expressions. Just use the
+`versions_regex` field instead of `versions` in your dependencies.yml.
 
 ## Examples
 
@@ -69,7 +75,7 @@ versions: "L.Y.0 || L.L.Y"
 
 ```yaml
 versions: "Y"
-# or
+# which is the same as
 versions: "Y.0.0"
 ```
 
@@ -79,6 +85,8 @@ versions: "Y.0.0"
 versions: "Y.Y.Y-Y"
 ```
 
-###### Ignore "nightly" releases
+###### "nightly" releases
 
-TODO add regex docs
+```yaml
+versions_regex: "nightly"
+```
