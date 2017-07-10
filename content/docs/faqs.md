@@ -6,7 +6,7 @@ title: FAQs
 
 ##### How often will it check my dependencies?
 
-We check each repo twice a day. You can manually trigger a build if you need to
+We check each repo once a day. You can manually trigger a build if you need to
 re-run something or are working on building your own collector or actor.
 
 <!-- ##### Can I use a custom image (collector/actor) without being a **Business** user?
