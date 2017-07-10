@@ -8,9 +8,11 @@ var gulp         = require("gulp"),
 var static_src_css = "./static_src/css"
 var static_src_scss = "./static_src/scss"
 var static_src_img = "./static_src/img"
+var static_src_permanent = "./static_src/permanent"
 
 var static_css = "./static/css"
 var static_img = "./static/img"
+var static_permanent = "./static/permanent"
 
 var style_scss = static_src_scss + "/style.scss"
 var bootstrap_custom_scss = static_src_scss + "/bootstrap_custom.scss"
@@ -62,6 +64,14 @@ gulp.task("img", function () {
         .pipe(hash.manifest("hash.json", false))
         .pipe(gulp.dest("data/img"))
 })
+
+// Just copy permanent images
+gulp.task("permanent", function () {
+    del([static_permanent + "/**/*"])
+    gulp.src(static_src_permanent + "/**/*")
+        .pipe(gulp.dest(static_permanent))
+})
+
 //
 // // Hash regular css files
 // gulp.task("css", function () {
@@ -73,7 +83,7 @@ gulp.task("img", function () {
 //         .pipe(gulp.dest("data/css"))
 // })
 
-gulp.task("build", ["img", "scss"])
+gulp.task("build", ["img", "permanent", "scss"])
 
 // Watch asset folder for changes
 gulp.task("watch", ["build"], function () {
@@ -84,4 +94,5 @@ gulp.task("watch", ["build"], function () {
 
     gulp.watch([static_src_scss + "/**/*", dropseed_static_dir + "/**/*"], ["scss"]).on('change', log_change)
     gulp.watch(static_src_img + "/**/*", ["img"]).on('change', log_change)
+    gulp.watch(static_src_permanent + "/**/*", ["permanent"]).on('change', log_change)
 })
