@@ -13,6 +13,7 @@ you might want to have a pull request created for you.
 
 - [repo-issue](repo-issue)
 - [find-replace](find-replace)
+- [slack](slack)
 
 ### Official language-specific actors
 

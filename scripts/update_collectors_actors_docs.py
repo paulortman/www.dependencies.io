@@ -8,11 +8,17 @@ repos = (
     ('collector', 'js-npm'),
     ('collector', 'git-repo'),
     ('collector', 'php-composer'),
+    ('collector', 'dockerfile'),
+    ('collector', 'php-wordpress-core'),
+    ('collector', 'php-wordpress-plugin'),
     ('actor', 'python-pip'),
     ('actor', 'js-npm'),
     ('actor', 'repo-issue'),
     ('actor', 'find-replace'),
     ('actor', 'php-composer'),
+    ('actor', 'slack'),
+    ('actor', 'php-wordpress-core'),
+    ('actor', 'php-wordpress-plugin'),
 )
 
 
