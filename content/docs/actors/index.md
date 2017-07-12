@@ -20,6 +20,8 @@ you might want to have a pull request created for you.
 - [python-pip](python-pip)
 - [js-npm](js-npm)
 - [php-composer](php-composer)
+- [php-wordpress-core](php-wordpress-core)
+- [php-wordpress-plugin](php-wordpress-plugin)
 
 ## dependencies.yml
 
