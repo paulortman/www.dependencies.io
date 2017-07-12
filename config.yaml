@@ -1,6 +1,6 @@
 languageCode: "en-us"
 title: "dependencies.io"
-baseURL: "https://dependencies.io/"
+baseURL: "https://www.dependencies.io/"
 theme: "dropseed"
 PygmentsCodeFences: true
 pygmentsstyle: friendly
