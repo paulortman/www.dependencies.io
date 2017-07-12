@@ -17,6 +17,9 @@ the exact same tools that you would use when working with your dependencies.
 - [js-npm](js-npm)
 - [git-repo](git-repo)
 - [php-composer](php-composer)
+- [php-wordpress-core](php-wordpress-core)
+- [php-wordpress-plugin](php-wordpress-plugin)
+- [dockerfile](dockerfile)
 
 ## dependencies.yml
 
