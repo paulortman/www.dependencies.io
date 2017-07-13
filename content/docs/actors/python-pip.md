@@ -11,7 +11,7 @@ title: "Actor: python-pip"
 
 A [dependencies.io](https://www.dependencies.io)
 [actor](https://www.dependencies.io/docs/actors/) that updates python pip
-dependencies in using git branches and pull requests.
+dependencies listed in requirements.txt files using git branches and pull requests.
 
 ## Usage
 
